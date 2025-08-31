@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
+.heading{
+    font-size: 1rem;
+}
+.searchbox {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border-radius: 14px;
+    border: 1px solid #fff;
+    margin-bottom: 4vh;
+}
+
+.searchbox input {
+    width: 90%;
+}
+
+.searchbox input::placeholder {
+    color: #dadada;
+}
+
+.searchbox button,
+.searchbox input {
+    font-size: 18px;
+    background: transparent;
+    color: #fff;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background: #3b4656;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    position: relative;
+}
+
+.main {
+    width: 90%;
+    height: auto;
+    border: 1px solid #fffeff;
+    border-radius: 20px;
+    padding: 20px 0;
+}
+
+.userprofile,
+.userdetails {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px 0;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.userdetails {
+    margin-top: 10%;
+}
+
+.userimage {
+    width: 150px;
+    height: 150px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.userimage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.userimage h1 {
+    font-size: 14px;
+}
+
+.userprofile p {
+    width: 95%;
+    font-size: 12px;
+}
+
+.userdetails .detailbox1 {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    gap: 0 40px;
+    padding: 0 2%;
+}
+
+.detailbox1 .follow {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.follow p{
+    font-size: 14px;
+}
+
+.userdetails button {
+    width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20%;
+    font-size: medium;
+}
+
+.nofound{
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: center;
+}
+.hide{
+    display: none;
+}
+.note b{ 
+    color: red;
+    text-transform: uppercase;
+}
+.note{
+    color: #ccc;
+    text-transform: capitalize;
+    padding: 10px;
+    margin: 2vh 0;
+}
+
+@media(min-width:480px) {
+    body {
+        margin-top: 8vh;
+        padding: 20px 30px;
+    }
+    .heading{
+        font-size: 1.4em;
+    }
+    .searchbox {
+        width: 90%;
+    }
+
+    .main {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+    .nofound{
+        font-size: 1.8rem;
+    }
+}
+@media(min-width:768px){
+    .heading{
+        font-size: 2rem;
+    }
+ .userimage{
+    width: 250px;
+    height: 250px;
+ }
+.userprofile h1{
+    font-size: 1.3rem;
+}
+ .userprofile p{
+    font-size: 1rem;
+ }
+ .detailbox1 .follow p{
+    font-size: 1.3em;
+ }
+ .detailbox1 button{
+    width: 150px;
+    font-size: 1.2rem;
+ }
+ .nofound{
+    font-size: 2em;
+ }
+}
+@media(min-width:1200px){
+    .heading{
+        font-size: 2.5em;
+        padding: 10px;
+    }
+    .searchbox{
+        width: 500px;
+    }
+    .userimage{
+    width: 400px;
+    height:400px;
+    }
+    .userprofile h1{
+        font-size: 2.5rem;
+    }
+    .userprofile p{
+        font-size: 2em;
+    }
+    .detailbox1{
+       gap:0 40px ;
+    }
+    .follow,
+    .detailbox1 button{
+        font-size:1.5em;
+    }
+    .nofound{
+        font-size: 3rem;
+    }
+}
